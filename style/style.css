@@ -1,10 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: red solid 1px;
+}
+
 body {
     background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 98.3vh;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
 }
+
+/* text styling */
+h2 {
+    font-size: 2rem;
+}
+
+.drop-down {
+    font-size: 1.1rem;
+}
+
+/* Dividers */
+
+.light-grayish-blue {
+    color: hsl(240, 5%, 91%);
+}
+
+/* Main container */
 
 #main-container {
     background-color: white;
@@ -12,32 +38,32 @@ body {
     height: 55vh;
     width: 55vw;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
 }
-
-
 
 /* image styling */
 
+#image-container {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
 #woman-desktop {
-    position: relative;
-    left: -6.5%;
-    top: 17%;
-    z-index: 4;
+    position: absolute;
+    
 }
 
 #pattern-desktop {
-    position: relative;
-   bottom: 650px;
-   right: 570px;
-
+    position: absolute;
+    height: 60%;
+    left: 50px;
 }
 
 #box-desktop {
     position: absolute;
-    top: 47.5%;
-    left: 16.5%;
-    width: 180px;
-    z-index: 5;
+    
 }
 
 /* accordion styling  */
@@ -46,5 +72,29 @@ body {
     border: none;
     border-bottom: 1px solid hsl(240, 5%, 91%);
     background-color: transparent;
+    margin: 10px 10px 10px 0px;
+    padding: 10px;
+    width: 90%;
+    text-align: left;
 }
 
+.arrow-down {
+    margin-left: 10px;
+}
+
+#faq-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+/* mobile / tablet view */
+
+@media only screen and (max-width: 768px) {
+    #main-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
