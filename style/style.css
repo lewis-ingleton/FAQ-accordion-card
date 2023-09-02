@@ -38,6 +38,7 @@ h2 {
     border-radius: 15px;
     min-height: 70vh;
     width: 70vw;
+    max-width: 1400px;
     display: flex;
     flex-direction: row;
 }
