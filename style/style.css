@@ -83,18 +83,20 @@ h2 {
 #box-image-wrapper {
     position: absolute;
     z-index: 4;
-    top: 210px;
+    top: 400px;
+    left: 80px;
     margin-block: auto;
 }
 
 #box-desktop {
-    display: block;
+    /* position: relative; */
 }
 
 /* accordion styling  */
 
 #faq-container {
     width: 50%;
+    margin: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,7 +121,7 @@ h2 {
 
 @media only screen and (max-width: 768px) {
     #main-container {
-        height: 80vh;
+        min-height: 80vh;
         width: 70vw;
         overflow: hidden;
         display: flex;
