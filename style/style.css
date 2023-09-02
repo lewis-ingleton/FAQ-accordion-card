@@ -36,7 +36,7 @@ h2 {
 #main-container {
     background-color: white;
     border-radius: 15px;
-    height: 70vh;
+    min-height: 70vh;
     width: 70vw;
     display: flex;
     flex-direction: row;
